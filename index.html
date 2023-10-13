@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE BACKGROUND PHOTO - by Vedat SÖZEN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+ 
+
+    
+
+    <div id="cards">
+        <div id="card1" onclick="card1()"> 
+            <img src="imgs/foto1.jpg">
+        </div>
+        <div id="card2" onclick="card2()">
+            <img src="imgs/foto2.jpg">
+        </div>
+        <div id="card3" onclick="card3()">
+            <img src="imgs/foto3.jpg">
+        </div>
+        <div id="card4" onclick="card4()">
+            <img src="imgs/foto4.jpg">
+        </div>
+        <div id="card5" onclick="card5()">
+            <img src="imgs/foto5.jpg">
+        </div>
+        <div id="card6" onclick="card6()">
+            <img src="imgs/foto6.jpg">
+        </div>
+        <div id="card7" onclick="card7()">
+            <img src="imgs/foto7.jpg">
+        </div>
+        <div id="card8" onclick="card8()">
+            <img src="imgs/foto8.jpg">
+        </div>
+    </div>
+
+    <p id="explanation">You can see an explanation here for every photo</p>
+
+</body>
+
+
+<script>
+  $(document).ready(function() {
+    $("#cards > div").click(function() {
+      let arkaplan = $(this).find("img").attr("src");
+     document.body.style.backgroundImage = "url(" + arkaplan +")";
+     document.body.style.backgroundSize = "100% 100%";
+     document.body.style.backgroundRepeat = "no-repeat";
+     
+    });
+  });
+
+function card1() {
+    document.getElementById("explanation").innerHTML = "Horses are looking eachother."
+}
+
+function card2() {
+    document.getElementById("explanation").innerHTML = "A man with umbrella is walking on road."
+}
+
+function card3() {
+    document.getElementById("explanation").innerHTML = "A Beautiful Jeep is in the forest."
+}
+
+function card4() {
+    document.getElementById("explanation").innerHTML = "Blue Tramway."
+}
+
+function card5() {
+    document.getElementById("explanation").innerHTML = "Lake View."
+}
+
+function card6() {
+    document.getElementById("explanation").innerHTML = "European City with buildings"
+}
+
+function card7() {
+    document.getElementById("explanation").innerHTML = "Three person is riding bicycle."
+}
+
+function card8() {
+    document.getElementById("explanation").innerHTML = "Collesium in a dark weather"
+}
+</script>
+
+</html>

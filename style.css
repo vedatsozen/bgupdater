@@ -1,0 +1,111 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+body {
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("imgs/foto1.jpg");
+    background-position: top  left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin: auto;
+    margin-top: 30px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+#cards {
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+    padding: 0;
+    height: fit-content;
+    width:1200px;
+}
+
+#cards > div {
+    height: 150px;
+    width:calc(100% / 8 );
+    background-color: black;
+    border-radius: 3px;
+    
+}
+
+#cards > div > img {
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+#cards > div:hover {
+    transition: 200ms ease;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    
+}
+
+#cards > div:active {
+    transform: translateY(5px);
+}
+
+button.modalbtn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button.modalbtn:hover {
+    
+    background-color: orangered;
+}
+
+button.modalbtn:active {
+    transform: scale(0.95);
+    transition: 0ms;
+}
+
+p#explanation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 4px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    height: fit-content;
+    width:fit-content;
+    max-width: 80vw;
+}
